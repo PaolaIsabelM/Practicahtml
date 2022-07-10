@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" type='text/css'>
+<style>
+body {
+  font-family: 'Sofia', cursive;;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Sofia', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #e22d22;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #39ccbf;
+  margin: 0px 0 70px 0;
+  font-size: 37px;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  font-size: 20px;
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://lh3.googleusercontent.com/A_L7bbs1TDbZ5gcKpVDh9_D1T1AmSQBVLPzlzTSXJ2urVKexRLLPEP1ftyFdRjN43EVvl4ATay_xT0B8_YUHtt4sfC32jbYhZTxW1rXvXSjHUSI0nyzwkTbQDAvZvzTE7I4z2-IAp9pP-FJI2h3gymqLf7C2TWUEaeGTebt1EFeGl1m1Vp39zAldiSdbD32eQeZzGTvmXfHmex_isneN1VNjBcSEufiNE88nM4HPQ2I7z5Esl1mXLvOIjxQ1rMdYkMjVicEq7Tb-T8IHpfhLZG_e7kqvWg7JnqQxnI5LOv53O_nOQ7gLwjHCwGgTLO7LxsUXXkdGIVcgHuQVoaESrf0YRYd58KMHeaHoKPrgmo7eFVkGRpb_hRSpABywPTT-YnJiLaUeJ0nuJnYSVyE9pjx-cKW68eldQqF58WiRllE-JlG51qdGwnmvB3tmBACrqcNFpY5Nri2ss_uQCOBPnwTkMx1Vu8VTfdJ0B9swofxeS_uhHRJ5Scc0OoElqxPqdKNIr1jb4xXCvqos3A5xtdAFnpTiQbT4dQdbXCN_p8RFccHDlg1ZNaErDbLyhxQYqS12fTc-hqF9HKWtz17MGgWUh4puqMaWj8hAHe5ik7A824AWURJndzFwdNt4EJpi-6M8x5qnOCY_41QSI1ml39nv4Ei0E44Ge8uMISoycIRs7DsnqeTckUC9PQZRm7PXWdBbRCNq9n_JTYtnGzk5ThaA_rYXLOgaEc6MIwLj9kURupnz-RzyAglO5Wn-=w469-h625-no?authuser=0");
+  height: 600px;
+  width: 400px;
+  margin: 0 auto;
+}
+.second{
+  background-image: url("https://lh3.googleusercontent.com/KJaiawXZYuZ_dSFC0GHCv_hFOxEITOO-tHinkzjTBaCm3muo78FxkC0ZeKTzllfVQzZk8aI588Xa3ZVvNXtyQqe9ZN2aqlw3wSZj--2IInVz-e6_M6pN8uYaT2Hw62kAv9G9QzEvkppWHjOqizrAI5PweSkKQ-SJa32JeNoOz_qOA6JrRE93C20Go0BbGNRKu0zVbwrFYx4A7pP2aSdWMekXBjaD4yk35RSCNRb-5lD3ZLOgUTe2LEWEgRRj8lyG4VL_I_rqi8Sq52HsFjQJmOukS7ntsnA2Bw7FlmSbwis3-nf-8IEixEmN3ptJ2ffu4vwaUa4Ry6LW3L97-Fn3_nS45vVqgtZ_fBNOVdSbF-6RCKsXZLQ_NHg1kKBIkLoeXjl5rG8p6nbsab2wEKNxsRJEW4WxNOGKZ2JuP7zU_SJ8DcRslNK-jZwm9Yyrh7ykFtkalE1cW7OZJLlmh0cU7yuOF8orl20kMLePdIFSGN2aLIMn83lVRWnESQlLHbOWGzGBslsRYpxOXXb0k3UDo4_JcXtw1PGA8w7Q8_EdUGRMyJXLysvihUhkefSZOowQNRnZ2XSpRdcZhRRJZDnCCPMuB-20RnOdjZRJ7PTtuULOUTBhfNCZF48k9wDmDlSXBWgaRxx1yrRVSeAj4wQ3qjJD03vbKVKsJ4KTPCaALUrjM1txPPpYWFZK_2vyhWc3RXknEEkOvZFWLrijO_vKlkkfsWkc4oYi6V4Ayq6dRociu-khFcEPE6zhZAJX=w469-h625-no?authuser=0");
+  height: 600px;
+  width: 400px;
+  margin: 0 auto;
+}
+.dessert{
+  background-image: url("https://lh3.googleusercontent.com/xoVKVbPYoaHCFkSsuaMBGABx6wI_LOH7rqa9FEcXYyWnT_TIMSdlD8NRP_hhQDBO62jOh5bbsEFLuAtVc96XsxrDt9h_tE8xW4m6521MIZYgbDpoKAvSWckrEZyBwSnJo9mdFj_EODv_968nQ583yuu3Im2GNhy_kXu_rS-3_6aFahEWDvh_XLDJCiJn2GPG0EG4SqETMK55JM9xtlPGApa7I0a9AOxuX3sWddAcf6VKz9yQ28uuQNHlEP-Ylp_3QCPYTXrE6nlZfZ8Aie0-OT4C6zKZs71R3UJbXz19Da1rVzx_9EoUHaUWENH6crH59U0V5et_GyZYehc8Q-y9gjU6cnDCt0BrLpruk6IJlmVkF896R4x8kW6vOGNsJUVkZEV76SCY4uo9Y96pN1x250eCZHJD-QHZnCErAR_HAiH4EoWdoBczD4rgkVPD3gl1mF90niZ4pV17IlvjWZtzN-5aMfUALAUsXPkTdxWKis5zys56N1DDWYQGk1XlAil3f4OIm0vKFvY2eDA4rzfGcBMB7k12dRDUWJtYubEPC3hocRz5oVftQQ4XyFJbkuCQGPruQV_r-tbylkZfM_MQxmDMIPIOE51YfN5Y4G30mzxdOut96jM8kGtKE8nhi1FhjGj34OBV3EOg_V5PTHrk5tWK2YPbfhp1mqXkraWU_6wjmmKfvbKLg9CplDnxmzWSMD6cAkL60A9XQAdRkkyh9vwBHq9nCL9vkqtNVEaZ8QXcu4VJnM7q5Y3qQrtn=w469-h625-no?authuser=0");
+   height: 600px;
+  width: 400px;
+  margin: 0 auto;
+}
+.price {
+  float: right;
+}
+button{
+     font-family: 'Sofia', cursive;
+     font-size: 17px;
+     position: absolute;
+     margin: 0px 250px 0px 250px;
+  }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 30px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Ormary</h1>
+<h2>Panadería y Postres</h2>
+<div class="first">
+  <p>Chocoflan<br />
+  <small>---   </small></p>
+</div>
+
+<div class="second">
+  <p>Conchita rellena<br />
+  <small>--- .</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Gelatinas<br />
+  <small>--- </small></p>
+</div>
+<button> Click aqui</button>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+  $("button").on("click", function(){
+    alert("Comunicate con nosotros")
+  });
+  </script>
+</script>
+ 
+
+</body>
